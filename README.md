@@ -29,21 +29,36 @@ ChatGPT will:
 }
 ```
 
-### Example returned data (hardcoded JSON for demo)
+### Example returned data
 
 ```json
 {
-  "name",
-  "address",
-  "location",
-  "rate",
-  "phoneNumber"
+  "title": "La Quinta Inn & Suites by Wyndham New York City Central Park",
+  "subTitle": null,
+  "description": [],
+  "price": null,
+  "address": "31 W 71st St, New York, NY 10023, United States",
+  "neighborhood": "Manhattan",
+  "street": "31 W 71st St",
+  "city": "New York",
+  "postalCode": "10023",
+  "state": "New York",
+  "countryCode": "US",
+  "website": null,
+  "phone": "+1 212-791-9451",
+  "phoneUnformatted": "+12127919451",
+  "location": {
+    "lat": 40.776171,
+    "lng": -73.9776917
+  },
+  "timeZone": "America/New_York",
+  "openingHours": [],
 }
 ```
 
 > 📌 **Data source:**
 > We fetch location data using Apify Actor:
-> **Free Google Maps Scraper – Low-cost & Extensive Version**
+> [Free Google Maps Scraper - Low-cost & Extensive Version](https://apify.com/blueorion/free-google-maps-scraper-extensive)
 
 <p align="center">
   <img src="./assets/chatgpt_demo.gif" alt="Demo" width="600" />
@@ -549,6 +564,8 @@ This is the file ChatGPT loads directly.
 
 `src/pages/places-map/`
 
+There are 5 files in this folder and they are big too post here but you can copy from this repo. The main thing you should aware of is `const toolOutput = useOpenAiGlobal("toolOutput");` which fetch tool output from OpenAI Global and use in the UI. This usually takes couple of seconds to load.
+
 > You can repeat this structure to create **multiple ChatGPT widgets**.
 
 ---
@@ -653,6 +670,10 @@ Open the provided URL to:
 * Call `find_places`
 * Inspect structured responses
 
+![List Resources in MCP Inspector](assets/mcp_inspector_list_resources.png)
+
+![Find Place Tool in MCP Inspector](assets/mcp_inspector_find_places_tool.png)
+
 ---
 
 ## Connect MCP to ChatGPT
@@ -676,13 +697,18 @@ Copy the generated HTTPS URL.
 5. Select **No Auth**
 6. Save as Draft
 
+![ChatGPT Settings](assets/chatgpt_settings.png)
+
+![ChatGPT Developer Mode](assets/chatgpt_developer_mode.png)
+
+![ChatGPT Create App](assets/chatgpt_create_app.png)
+
 Now, when you prompt:
 
 > “Show me some hotels in New York”
 
 🎉 ChatGPT will:
 
-* Call your MCP tool
+* Call your MCP tool (find_places)
 * Load your React UI
-* Render the map inline
-
+* Render the map inline with the output from MCP Tool
