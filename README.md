@@ -1,5 +1,9 @@
 # How To Create a ChatGPT App with UI in ReactJS + Tailwind
 
+<p align="center">
+  <img src="./assets/chatgpt_demo.gif" alt="Demo" width="600" />
+</p>
+
 ### Step-by-Step Guide (ChatGPT + MCP + Map UI)
 
 In this tutorial, you’ll build a **ChatGPT App with a custom UI**, powered by:
@@ -60,18 +64,11 @@ ChatGPT will:
 > We fetch location data using Apify Actor:
 > [Free Google Maps Scraper - Low-cost & Extensive Version](https://apify.com/blueorion/free-google-maps-scraper-extensive)
 
-<p align="center">
-  <img src="./assets/chatgpt_demo.gif" alt="Demo" width="600" />
-</p>
-
 ---
 
 ## Table of Contents
 
 - [How To Create a ChatGPT App with UI in ReactJS + Tailwind](#how-to-create-a-chatgpt-app-with-ui-in-reactjs--tailwind)
-    + [Step-by-Step Guide (ChatGPT + MCP + Map UI)](#step-by-step-guide-chatgpt--mcp--map-ui)
-    + [Example tool input](#example-tool-input)
-    + [Example returned data (hardcoded JSON for demo)](#example-returned-data-hardcoded-json-for-demo)
   * [Table of Contents](#table-of-contents)
   * [Prerequisites](#prerequisites)
   * [Project Setup](#project-setup)
