@@ -1,0 +1,1162 @@
+{
+	"title": "Villa Mosconi Restaurant",
+	"subTitle": null,
+	"description": null,
+	"price": "$50–100",
+	"address": "69 MacDougal St, New York, NY 10012, United States",
+	"neighborhood": "Manhattan",
+	"street": "69 MacDougal St",
+	"city": "New York",
+	"postalCode": "10012",
+	"state": "New York",
+	"countryCode": "US",
+	"website": null,
+	"phone": "+1 212-673-0390",
+	"phoneUnformatted": "+12126730390",
+	"location": {
+		"lat": 40.728599599999995,
+		"lng": -74.0020088
+	},
+	"timeZone": "America/New_York",
+	"openingHours": [
+		{
+			"day": "Thursday",
+			"hours": "3–9:30 PM"
+		},
+		{
+			"day": "Friday",
+			"hours": "3–9:30 PM"
+		},
+		{
+			"day": "Saturday",
+			"hours": "3–9:30 PM"
+		},
+		{
+			"day": "Sunday",
+			"hours": "Closed"
+		},
+		{
+			"day": "Monday",
+			"hours": "Closed"
+		},
+		{
+			"day": "Tuesday",
+			"hours": "3–9:30 PM"
+		},
+		{
+			"day": "Wednesday",
+			"hours": "3–9:30 PM"
+		}
+	],
+	"imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOCAie1-n6Z5s1BUDUrfi_hmdHjk5hlrkHCfw30=w426-h240-k-no",
+	"url": "https://www.google.com/maps/preview/place/Villa+Mosconi+Restaurant,+69+MacDougal+St,+New+York,+NY+10012,+United+States/@40.7285996,-74.0020088,3024a,13.1y/data=!4m2!3m1!1s0x89c259920c423975:0x5fa17837993469b1",
+	"language": "en",
+	"claimThisBusiness": false,
+	"permanentlyClosed": false,
+	"categoryName": "Italian restaurant",
+	"categories": [
+		"Italian restaurant",
+		"Bar",
+		"Restaurant"
+	],
+	"fid": "0x89c259920c423975:0x5fa17837993469b1",
+	"cid": "6890921085042452913",
+	"placeId": "ChIJdTlCDJJZwokRsWk0mTd4oV8",
+	"kgmid": "/g/1tsyl2xq",
+	"searchPageUrl": "https://www.google.com/maps/search/restaurant+in+New+York?hl=en&gl=US",
+	"reviewsCount": 414,
+	"reviewScore": 4.5,
+	"reviewsDistribution": {
+		"oneStar": 12,
+		"twoStar": 12,
+		"threeStar": 22,
+		"fourStar": 64,
+		"fiveStar": 304
+	},
+	"imagesCount": 471,
+	"hotelPrices": [],
+	"peopleAlsoSearch": [
+		{
+			"title": "Monte's Trattoria",
+			"reviewsCount": 892,
+			"totalScore": 4.4
+		},
+		{
+			"title": "Morandi",
+			"reviewsCount": 1596,
+			"totalScore": 4.3
+		},
+		{
+			"title": "Osteria Nonnino",
+			"reviewsCount": 3339,
+			"totalScore": 4.8
+		},
+		{
+			"title": "Maestro Pasta",
+			"reviewsCount": 1542,
+			"totalScore": 4.6
+		},
+		{
+			"title": "La Lanterna di Vittorio",
+			"reviewsCount": 2326,
+			"totalScore": 4.6
+		}
+	],
+	"additionalInfo": {
+		"Service options": [
+			{
+				"Takeout": true
+			},
+			{
+				"Dine-in": true
+			},
+			{
+				"Delivery": false
+			}
+		],
+		"Highlights": [
+			{
+				"Fast service": true
+			},
+			{
+				"Great coffee": true
+			},
+			{
+				"Great dessert": true
+			},
+			{
+				"Great wine list": true
+			},
+			{
+				"Sports": true
+			}
+		],
+		"Popular for": [
+			{
+				"Dates": true
+			}
+		],
+		"Accessibility": [
+			{
+				"Wheelchair accessible entrance": true
+			},
+			{
+				"Wheelchair accessible restroom": true
+			},
+			{
+				"Wheelchair accessible seating": true
+			}
+		],
+		"Offerings": [
+			{
+				"OK to order just drinks": true
+			}
+		],
+		"Dining options": [
+			{
+				"Order ahead": true
+			}
+		],
+		"Amenities": [
+			{
+				"Bar onsite": true
+			},
+			{
+				"Restroom": true
+			}
+		],
+		"Atmosphere": [
+			{
+				"Special occasions": true
+			}
+		],
+		"Crowd": [
+			{
+				"Business dinner": true
+			}
+		],
+		"Planning": [
+			{
+				"Dinner reservations recommended": true
+			},
+			{
+				"Accepts reservations": true
+			}
+		],
+		"Payments": [
+			{
+				"Credit cards": true
+			},
+			{
+				"Debit cards": true
+			},
+			{
+				"NFC mobile payments": true
+			}
+		],
+		"Children": [
+			{
+				"Good for kids": true
+			},
+			{
+				"High chairs": true
+			}
+		],
+		"Not for Display": [
+			{
+				"Staff get temperature checks": true
+			},
+			{
+				"Staff required to disinfect surfaces between visits": true
+			},
+			{
+				"Staff wear masks": true
+			},
+			{
+				"Temperature check required": true
+			}
+		]
+	},
+	"tours": [],
+	"tickets": [],
+	"gasPrices": null,
+	"chargingStations": [],
+	"menu": [
+		{
+			"section": "Menu-f4000f1a-6c80-44a0-90ce-111049fc4093",
+			"categories": [
+				{
+					"category": "Appetizers",
+					"items": [
+						{
+							"name": "Crab Cake",
+							"description": "",
+							"price": "$18.00",
+							"image": null
+						},
+						{
+							"name": "Asparagus Parmigiana",
+							"description": "",
+							"price": "$17.00",
+							"image": null
+						},
+						{
+							"name": "Artichoke Hearts Oreganata",
+							"description": "",
+							"price": "$18.00",
+							"image": null
+						},
+						{
+							"name": "Eggplant Rolatini",
+							"description": "",
+							"price": "$14.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Entrees",
+					"items": [
+						{
+							"name": "Salmon Genovese",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Osso Buco Risotto",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Penne Primavera Pink Cream Sauce",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Homemade Taglierini Carciofini",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Stuffed Pork Chop Valdostana",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Stuffed Veal Chop Valdostana",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Calf's Liver Veneziana",
+							"description": "",
+							"price": "",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Appetizers & Salads",
+					"items": [
+						{
+							"name": "Baked Clams",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Fried Calamari",
+							"description": "(for 1)",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Artichoke Hearts Oreganata",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Baked Whole Artichoke",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Stuffed Eggplant Rolatini",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Prosciutto & Melon",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Mozzarella & Tomato Caprese",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Caesar Salad",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Arugula Salad",
+							"description": "",
+							"price": "",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Homemade Pasta",
+					"items": [
+						{
+							"name": "Lasagna",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Paglia E Fieno",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Ravioli",
+							"description": "(meat, cheese, spinach & cheese)",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Gnocchi Al Pesto",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Spinach Fettuccine Alla Bolognese",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Fettuccine Alfredo",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Tortellini Alfredo",
+							"description": "(meat stuffed)",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Spinach Taglierini Al Pesto",
+							"description": "",
+							"price": "",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Pasta",
+					"items": [
+						{
+							"name": "Bolognese",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Tomato Sauce",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Marinara Sauce",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Linguine Alle Vongole",
+							"description": "(red or white)",
+							"price": "",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Entrées",
+					"items": [
+						{
+							"name": "Chicken Milanese",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Chicken Parmigiana",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Chicken Marsala",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Chicken Indorato",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Chicken Bolognese",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Veal Milanese",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Veal Parmigiana",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Veal Marsala",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Veal Piccata",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Veal Bolognese",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Broiled Salmon",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Sautéed Branzino",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Shrimp Oreganata Over Capellini",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Eggplant Parmigiana",
+							"description": "",
+							"price": "",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Dessert & Coffee",
+					"items": [
+						{
+							"name": "Cannoli",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Tartufo",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Tiramisù Della Casa",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Cheesecake Della Casa",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Coffee",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Tea",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Cappuccino",
+							"description": "",
+							"price": "",
+							"image": null
+						},
+						{
+							"name": "Espresso",
+							"description": "",
+							"price": "",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Italian",
+					"items": [
+						{
+							"name": "Pinot Grigio, La Vendemmia",
+							"description": "",
+							"price": "$10.00",
+							"image": null
+						},
+						{
+							"name": "Gavi Di Gavi, Figini",
+							"description": "",
+							"price": "$13.00",
+							"image": null
+						},
+						{
+							"name": "Sauvignon Blanc, Bortoluzzi",
+							"description": "",
+							"price": "$11.00",
+							"image": null
+						},
+						{
+							"name": "Prosecco, Villa Jolanda",
+							"description": "glass",
+							"price": "$11.00",
+							"image": null
+						},
+						{
+							"name": "Moscato D’Asti, Rupestr",
+							"description": "glass",
+							"price": "$10.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Other",
+					"items": [
+						{
+							"name": "Chardonnay, Beringer",
+							"description": "(California)",
+							"price": "$11.00",
+							"image": null
+						},
+						{
+							"name": "White Zinfandel, Beringer",
+							"description": "(California)",
+							"price": "$10.00",
+							"image": null
+						},
+						{
+							"name": "Rosé, Côté Mas",
+							"description": "(France)",
+							"price": "$10.00",
+							"image": null
+						},
+						{
+							"name": "Riesling, Trimbach",
+							"description": "(France) glass",
+							"price": "$13.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Italian",
+					"items": [
+						{
+							"name": "Merlot, La Vendemmia",
+							"description": "",
+							"price": "$10.00",
+							"image": null
+						},
+						{
+							"name": "Montepulciano D’Abruzzo, Villadoro",
+							"description": "",
+							"price": "$11.00",
+							"image": null
+						},
+						{
+							"name": "Chianti, La Vendemmia",
+							"description": "",
+							"price": "$11.00",
+							"image": null
+						},
+						{
+							"name": "Barbera D’Asti “L’Avvocata,” Coppo",
+							"description": "",
+							"price": "$12.00",
+							"image": null
+						},
+						{
+							"name": "Dolcetto D’Asti, Rupestr",
+							"description": "",
+							"price": "$10.00",
+							"image": null
+						},
+						{
+							"name": "Neprica, Tormaresca",
+							"description": "",
+							"price": "$11.00",
+							"image": null
+						},
+						{
+							"name": "Sangiovese, Famiglia Castellani",
+							"description": "",
+							"price": "$11.00",
+							"image": null
+						},
+						{
+							"name": "Pinot Noir, Paradosso",
+							"description": "glass",
+							"price": "$11.00",
+							"image": null
+						},
+						{
+							"name": "Barolo, Terre Del Barolo",
+							"description": "glass",
+							"price": "$21.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Other",
+					"items": [
+						{
+							"name": "Cabernet Sauvignon, Woodbridge",
+							"description": "(California)",
+							"price": "$11.00",
+							"image": null
+						},
+						{
+							"name": "Old Vine Malbec, Diseño",
+							"description": "(Argentina) glass",
+							"price": "$11.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Champagne & Sparkling Wines",
+					"items": [
+						{
+							"name": "Veuve Clicquot Brut Yellow Label NV",
+							"description": "",
+							"price": "$117.00",
+							"image": null
+						},
+						{
+							"name": "Prosecco, Villa Jolanda NV",
+							"description": "",
+							"price": "$32.00",
+							"image": null
+						},
+						{
+							"name": "Moscato D’Asti, Rupestr 2017",
+							"description": "",
+							"price": "$34.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Friuli-Venezia Giulia",
+					"items": [
+						{
+							"name": "Pinot Grigio, Attems 2018",
+							"description": "",
+							"price": "$40.00",
+							"image": null
+						},
+						{
+							"name": "Sauvignon Blanc, Bortoluzzi 2018",
+							"description": "",
+							"price": "$40.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Piemonte",
+					"items": [
+						{
+							"name": "Gavi Di Gavi, Figini 2019",
+							"description": "",
+							"price": "$42.00",
+							"image": null
+						},
+						{
+							"name": "Gavi Di Gavi “Black Label,” La Scolca 2019",
+							"description": "",
+							"price": "$97.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Sicilia",
+					"items": [
+						{
+							"name": "Grillo, “Salinaro,” Cantine Pellegrino 2016",
+							"description": "",
+							"price": "$38.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Toscana",
+					"items": [
+						{
+							"name": "Vernaccia Di San Gimignano, Rocca Della Macie 2016",
+							"description": "",
+							"price": "$38.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Other White Wines & Rosé",
+					"items": [
+						{
+							"name": "Chardonnay, Kendall-Jackson, Vintner’s Reserve, Sonoma 2020",
+							"description": "",
+							"price": "$42.00",
+							"image": null
+						},
+						{
+							"name": "Sancerre, Domaine Durand, France 2020",
+							"description": "",
+							"price": "$52.00",
+							"image": null
+						},
+						{
+							"name": "Riesling, Trimbach, France 2016",
+							"description": "",
+							"price": "$47.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "American Red Wines",
+					"items": [
+						{
+							"name": "Cabernet Sauvignon, Oberon, Napa Valley 2019",
+							"description": "",
+							"price": "$50.00",
+							"image": null
+						},
+						{
+							"name": "Cabernet Sauvignon, Pedroncelli, Sonoma County 2016",
+							"description": "",
+							"price": "$40.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Other Red Wines",
+					"items": [
+						{
+							"name": "Old Vine Malbec, Diseño, Argentina 2018",
+							"description": "",
+							"price": "$34.00",
+							"image": null
+						},
+						{
+							"name": "Pinot Noir, Paul Mas, France 2020",
+							"description": "",
+							"price": "$36.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Abruzzo",
+					"items": [
+						{
+							"name": "Montepulcian D’Abruzzo “Cadetto,” Castorani 2017",
+							"description": "",
+							"price": "$41.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Basilicata",
+					"items": [
+						{
+							"name": "Aglianico Del Vulture, “Terre Di Orazio,” Cantina Di Venosa 2017",
+							"description": "",
+							"price": "$38.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Emilia-Romagna",
+					"items": [
+						{
+							"name": "Sangiovese, “Notturno,” Drei Donà 2018",
+							"description": "",
+							"price": "$36.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Piemonte",
+					"items": [
+						{
+							"name": "Barbera D’Asti, “La Braja,” Castello Gabiano 2016",
+							"description": "",
+							"price": "$41.00",
+							"image": null
+						},
+						{
+							"name": "Gattinara, Travaglini 2017",
+							"description": "",
+							"price": "$67.00",
+							"image": null
+						},
+						{
+							"name": "Barolo, Bava 2010",
+							"description": "",
+							"price": "$110.00",
+							"image": null
+						},
+						{
+							"name": "Barolo, Coppo 2017",
+							"description": "",
+							"price": "$77.00",
+							"image": null
+						},
+						{
+							"name": "Barbaresco, Prunotto 2016",
+							"description": "",
+							"price": "$97.00",
+							"image": null
+						},
+						{
+							"name": "Barbaresco, Gaja 2014",
+							"description": "",
+							"price": "$417.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Puglia",
+					"items": [
+						{
+							"name": "Castel Del Monte Rosso Riserva, “Vigna Pedale,” Torrevento 2014",
+							"description": "",
+							"price": "$52.00",
+							"image": null
+						},
+						{
+							"name": "Neprica, Tormaresca 2015",
+							"description": "",
+							"price": "$34.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Sicilia",
+					"items": [
+						{
+							"name": "Nero D’Avola, Graffetta 2018",
+							"description": "",
+							"price": "$38.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Toscana",
+					"items": [
+						{
+							"name": "Chianti Classico, Riserva Ducale (Tan), Ruffino 2018",
+							"description": "",
+							"price": "$56.00",
+							"image": null
+						},
+						{
+							"name": "Chianti Classico, Gran Selezione, Riserva Ducale (Gold), Ruffino 2016",
+							"description": "",
+							"price": "$87.00",
+							"image": null
+						},
+						{
+							"name": "Chianti Classico, Castello D’Albola 2018",
+							"description": "",
+							"price": "$41.00",
+							"image": null
+						},
+						{
+							"name": "Chianti Colli Senesi, Lornano 2016",
+							"description": "",
+							"price": "$34.00",
+							"image": null
+						},
+						{
+							"name": "Brunello Di Montalcino, Renieri 2016",
+							"description": "",
+							"price": "$165.00",
+							"image": null
+						},
+						{
+							"name": "Bolgheri Rosso, “Le Serre Nuove,” Ornellaia 2015",
+							"description": "",
+							"price": "$137.00",
+							"image": null
+						},
+						{
+							"name": "Tignanello, Antinori 2018",
+							"description": "",
+							"price": "$290.00",
+							"image": null
+						},
+						{
+							"name": "Super Tuscan, “Guidalberto,” Tenuta San Guido, (“Baby Sassicaia”) 2019",
+							"description": "",
+							"price": "$122.00",
+							"image": null
+						},
+						{
+							"name": "Rosso Toscana, Ziobaffa (Organic) 2016",
+							"description": "",
+							"price": "$34.00",
+							"image": null
+						},
+						{
+							"name": "Vino Nobile Di Montepulciano (Santa Caterina), Trerose 2015",
+							"description": "",
+							"price": "$77.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Veneto",
+					"items": [
+						{
+							"name": "Amarone Classico, Bertani 2007",
+							"description": "",
+							"price": "$245.00",
+							"image": null
+						},
+						{
+							"name": "Amarone Classico, Zardini 2016",
+							"description": "",
+							"price": "$77.00",
+							"image": null
+						},
+						{
+							"name": "Valpolicella Ripasso Superiore, “Marogne,” Zeni 2018",
+							"description": "",
+							"price": "$41.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "BEERS",
+					"items": [
+						{
+							"name": "Budweiser",
+							"description": "",
+							"price": "$6.00",
+							"image": null
+						},
+						{
+							"name": "Bud Light",
+							"description": "",
+							"price": "$6.00",
+							"image": null
+						},
+						{
+							"name": "Brooklyn Lager",
+							"description": "",
+							"price": "$7.00",
+							"image": null
+						},
+						{
+							"name": "Brooklyn IPA",
+							"description": "",
+							"price": "$7.00",
+							"image": null
+						},
+						{
+							"name": "Peroni",
+							"description": "",
+							"price": "$7.00",
+							"image": null
+						},
+						{
+							"name": "Heineken",
+							"description": "",
+							"price": "$7.00",
+							"image": null
+						},
+						{
+							"name": "Amstel Light",
+							"description": "",
+							"price": "$7.00",
+							"image": null
+						},
+						{
+							"name": "Heineken 0 Alc",
+							"description": "",
+							"price": "$7.00",
+							"image": null
+						},
+						{
+							"name": "Stella Artois",
+							"description": "",
+							"price": "$8.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Cocktail Specials",
+					"items": [
+						{
+							"name": "A Gizzard Each",
+							"description": "(Old Fashioned) Wild Turkey Bourbon, Angostura Bitters, Sugar, Splash of Club Soda, Muddled Orange & Cherry",
+							"price": "$13.00",
+							"image": null
+						},
+						{
+							"name": "Mosconi Manhattan",
+							"description": "George Dickel Rye Whisky, Montenegro Amaro, Angostura Bitters, Maraschino Cherry",
+							"price": "$14.00",
+							"image": null
+						},
+						{
+							"name": "Pineapple Crush",
+							"description": "Rhum Clément Mahina Coco Coconut Liqueur, Pineapple Juice, Cranberry Juice",
+							"price": "$13.00",
+							"image": null
+						},
+						{
+							"name": "Tami-Tini",
+							"description": "KetelOne Vodka, Homemade Limoncello",
+							"price": "$15.00",
+							"image": null
+						},
+						{
+							"name": "Taste Of Amalfi",
+							"description": "Villa Jolanda Prosecco, Aperol, Homemade Limoncello, Splash of Club Soda, Orange Slice",
+							"price": "$14.00",
+							"image": null
+						},
+						{
+							"name": "Espresso Martini",
+							"description": "Tito’s Vodka, Crème de Cacao, Coffee Liqueur, Espresso Shot",
+							"price": "$15.00",
+							"image": null
+						}
+					]
+				}
+			]
+		}
+	],
+	"menuUrl": null,
+	"reserveTableUrls": [
+		"https://villamosconi.com/restaurant-reservations-nyc/"
+	],
+	"orderOnlineUrls": [],
+	"scrapedAt": "2026-01-22T06:31:06.962Z"
+}

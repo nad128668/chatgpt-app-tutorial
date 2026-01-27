@@ -1,0 +1,568 @@
+{
+	"title": "Barn Joo Union Square",
+	"subTitle": null,
+	"description": null,
+	"price": "$30–50",
+	"address": "35 Union Square W, New York, NY 10003, United States",
+	"neighborhood": "Manhattan",
+	"street": "35 Union Square W",
+	"city": "New York",
+	"postalCode": "10003",
+	"state": "New York",
+	"countryCode": "US",
+	"website": null,
+	"phone": "+1 646-398-9663",
+	"phoneUnformatted": "+16463989663",
+	"location": {
+		"lat": 40.736868,
+		"lng": -73.990738
+	},
+	"timeZone": "America/New_York",
+	"openingHours": [
+		{
+			"day": "Thursday",
+			"hours": "12–11 PM"
+		},
+		{
+			"day": "Friday",
+			"hours": "12–11 PM"
+		},
+		{
+			"day": "Saturday",
+			"hours": "12–11 PM"
+		},
+		{
+			"day": "Sunday",
+			"hours": "12–10 PM"
+		},
+		{
+			"day": "Monday",
+			"hours": "12–10 PM"
+		},
+		{
+			"day": "Tuesday",
+			"hours": "12–10 PM"
+		},
+		{
+			"day": "Wednesday",
+			"hours": "12–10 PM"
+		}
+	],
+	"imageUrl": "https://lh3.googleusercontent.com/p/AF1QipP29fDVDs1i9HBqTl-bmaDUsUyy-7xXD8W9OtFS=w408-h366-k-no",
+	"url": "https://www.google.com/maps/preview/place/Barn+Joo+Union+Square,+35+Union+Square+W,+New+York,+NY+10003,+United+States/@40.736868,-73.990738,3023a,13.1y/data=!4m2!3m1!1s0x89c259a3cae9b543:0x63891561bc5f9542",
+	"language": "en",
+	"claimThisBusiness": false,
+	"permanentlyClosed": false,
+	"categoryName": "Restaurant",
+	"categories": [
+		"Restaurant",
+		"Asian restaurant",
+		"Bar & grill",
+		"Korean barbecue restaurant",
+		"Korean restaurant"
+	],
+	"fid": "0x89c259a3cae9b543:0x63891561bc5f9542",
+	"cid": "7172287391080617282",
+	"placeId": "ChIJQ7XpyqNZwokRQpVfvGEViWM",
+	"kgmid": "/g/1hm2l30yj",
+	"searchPageUrl": "https://www.google.com/maps/search/restaurant+in+New+York?hl=en&gl=US",
+	"reviewsCount": 2043,
+	"reviewScore": 4.4,
+	"reviewsDistribution": {
+		"oneStar": 45,
+		"twoStar": 57,
+		"threeStar": 140,
+		"fourStar": 523,
+		"fiveStar": 1278
+	},
+	"imagesCount": 2544,
+	"hotelPrices": [],
+	"peopleAlsoSearch": [
+		{
+			"title": "Barn Joo 35",
+			"reviewsCount": 1680,
+			"totalScore": 4.4
+		},
+		{
+			"title": "YOGI by Barnjoo",
+			"reviewsCount": 607,
+			"totalScore": 4.6
+		},
+		{
+			"title": "Jongro BBQ",
+			"reviewsCount": 5432,
+			"totalScore": 4.5
+		},
+		{
+			"title": "Gen Korean BBQ House",
+			"reviewsCount": 919,
+			"totalScore": 3.9
+		},
+		{
+			"title": "Mista Oh - Korean food Flatiron",
+			"reviewsCount": 664,
+			"totalScore": 4.6
+		}
+	],
+	"additionalInfo": {
+		"From the business": [
+			{
+				"Identifies as Asian-owned": true
+			}
+		],
+		"Service options": [
+			{
+				"Outdoor seating": true
+			},
+			{
+				"No-contact delivery": true
+			},
+			{
+				"Delivery": true
+			},
+			{
+				"Takeout": true
+			},
+			{
+				"Dine-in": true
+			}
+		],
+		"Highlights": [
+			{
+				"Fast service": true
+			},
+			{
+				"Great beer selection": true
+			},
+			{
+				"Great cocktails": true
+			},
+			{
+				"Great dessert": true
+			},
+			{
+				"Great wine list": true
+			}
+		],
+		"Popular for": [
+			{
+				"Dates": true
+			}
+		],
+		"Accessibility": [
+			{
+				"Wheelchair accessible entrance": true
+			},
+			{
+				"Wheelchair accessible restroom": true
+			},
+			{
+				"Wheelchair accessible seating": true
+			},
+			{
+				"Wheelchair accessible parking lot": false
+			}
+		],
+		"Offerings": [
+			{
+				"Happy hour": true
+			},
+			{
+				"OK to order just drinks": true
+			}
+		],
+		"Dining options": [
+			{
+				"Order ahead": true
+			},
+			{
+				"Counter seating": true
+			}
+		],
+		"Amenities": [
+			{
+				"Bar onsite": true
+			},
+			{
+				"Gender-neutral restroom": true
+			},
+			{
+				"Restroom": true
+			}
+		],
+		"Atmosphere": [
+			{
+				"Contemporary": true
+			},
+			{
+				"Special occasions": true
+			}
+		],
+		"Crowd": [
+			{
+				"Business dinner": true
+			},
+			{
+				"Business lunch": true
+			}
+		],
+		"Planning": [
+			{
+				"Brunch reservations recommended": true
+			},
+			{
+				"Dinner reservations recommended": true
+			},
+			{
+				"Accepts reservations": true
+			}
+		],
+		"Payments": [
+			{
+				"Debit cards": true
+			},
+			{
+				"NFC mobile payments": true
+			}
+		],
+		"Children": [
+			{
+				"High chairs": true
+			}
+		],
+		"Parking": [
+			{
+				"Paid street parking": true
+			}
+		],
+		"Pets": [
+			{
+				"Dogs allowed": true
+			}
+		],
+		"Not for Display": [
+			{
+				"Staff wear masks": true
+			}
+		]
+	},
+	"tours": [],
+	"tickets": [],
+	"gasPrices": null,
+	"chargingStations": [],
+	"menu": [
+		{
+			"section": "Barn Joo",
+			"categories": [
+				{
+					"category": "Side & Other",
+					"items": [
+						{
+							"name": "Rice",
+							"description": "",
+							"price": "$5.00",
+							"image": null
+						},
+						{
+							"name": "Homemade Pickles",
+							"description": "Pickled Mix Vegetables (Carrot, Cauliflower, Radish, Cucumber.)",
+							"price": "$5.00",
+							"image": null
+						},
+						{
+							"name": "Homemade Kimchi",
+							"description": "Fermented Nappa cabage with chilli/shrimp paste. ⚠Not Vegan.",
+							"price": "$5.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Noodle",
+					"items": [
+						{
+							"name": "Fisherman's Noodle",
+							"description": "{SPICY} BEEF broth, blue crab, mussels, shrimp, mix seafood, ramen noodles.",
+							"price": "$30.00",
+							"image": null
+						},
+						{
+							"name": "Japche",
+							"description": "Sweet potato glass noodles stir-fry with vegetables.",
+							"price": "$25.00",
+							"image": null
+						},
+						{
+							"name": "Kimchi Creamy Shrimp",
+							"description": "{Spicy} Shrimp, Kimchi, Bechamel, Mushrooms, Heavy Cream, Chili Oil, Mix Seafood, Fish Roe & Udon.",
+							"price": "$30.00",
+							"image": null
+						},
+						{
+							"name": "Yukgaejang Ramen",
+							"description": "{SPICY} Shredded beef, beef broth, bracken, bean sprout, egg, scallion, ramen noodles.",
+							"price": "$29.00",
+							"image": null
+						},
+						{
+							"name": "Korean Army Stew",
+							"description": "",
+							"price": "$31.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Main",
+					"items": [
+						{
+							"name": "Braised Short Ribs",
+							"description": "p. a. Amish grass fed short ribs, pine-nuts, chestnuts, mushroom, peppers, sweet potato puree, kabocha squash.",
+							"price": "$46.00",
+							"image": null
+						},
+						{
+							"name": "Chili Shrimp",
+							"description": "Shrimp, fresh corn, parmesan, sweet potato crunch, onion, zucchini, lemon aioli, sour cream.",
+							"price": "$34.00",
+							"image": null
+						},
+						{
+							"name": "Sundubu Soup",
+							"description": "Beef broth, kimchi, ramen noodle, ham, sausage, meatball, mixed vegetables, mixed mushroom, mozzarella cheese, spinach, sunny side up egg.",
+							"price": "$29.00",
+							"image": null
+						},
+						{
+							"name": "Pork Belly",
+							"description": "Pickled onion, white kimchi, pickled cabbage, chayote pickles, pico de gallo, ssamjang sauce, chicharron.",
+							"price": "$38.00",
+							"image": null
+						},
+						{
+							"name": "Braised Octopus",
+							"description": "Octopus, marble potatoes, black bean, shishito peppers, ginger, bean sprouts, gochujang chili sauce.",
+							"price": "$39.00",
+							"image": null
+						},
+						{
+							"name": "New York Bites",
+							"description": "Marinated short rib, marble potatoes, sweet potato crunch, grilled lemon, kabocha squash, hemp seeds, butter sautéed mushrooms.",
+							"price": "$45.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Rice",
+					"items": [
+						{
+							"name": "Kimchi Fried Rice",
+							"description": "Kimchi, spicy pork, mixed veggies, fried quinoa, mozzarella cheese, sunny side up egg.",
+							"price": "$27.00",
+							"image": null
+						},
+						{
+							"name": "Sashimi Bibimbap",
+							"description": "{ cold } Salmon, tuna, white fish, fish roe, fried quinoa, caramelized kimchi, micro greens, pickled radish & pico de gallo.",
+							"price": "$30.00",
+							"image": null
+						},
+						{
+							"name": "Stone Bowl Bibimbap",
+							"description": "Five grain, purple rice with broccoli, carrots, radish, zucchini, mushrooms, bean sprouts, fried quinoa, sunny side up egg.",
+							"price": "$26.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Share & Tapa",
+					"items": [
+						{
+							"name": "Tiger Roll",
+							"description": "Tuna, salmon, avocado, pickled radish, kani, topped with eel sauce & spicy mayo.",
+							"price": "$22.00",
+							"image": null
+						},
+						{
+							"name": "Tacos (D)",
+							"description": "Served with lettuce, guacamole, pico de gallo, sour cream and limes.",
+							"price": "$18.00",
+							"image": null
+						},
+						{
+							"name": "Shrimp Tempura Roll",
+							"description": "Shrimp tempura, avocado, pickled radish, kani, sweet potato crunch, fish roe, topped with eel sauce & spicy mayo",
+							"price": "$22.00",
+							"image": null
+						},
+						{
+							"name": "Potato Croquette",
+							"description": "Fried mashed potatoes with green peas and carrots with Korean demigras sauce (3pcs)",
+							"price": "$14.00",
+							"image": null
+						},
+						{
+							"name": "Barn Joo Salad",
+							"description": "Quinoa, black bean, mixed greens, seasonal fruits, hard-boiled egg, almonds, asparagus, yuzu-ginger dressing.",
+							"price": "$23.00",
+							"image": null
+						},
+						{
+							"name": "Tuna Mayo Tartare",
+							"description": "{ cold } Tuna, pickled radish, sesame oil, mayo, honey with crostini.",
+							"price": "$21.00",
+							"image": null
+						},
+						{
+							"name": "Popcorn Shrimp Special",
+							"description": "",
+							"price": "$19.00",
+							"image": null
+						},
+						{
+							"name": "Bulgogi Spicy Rice Cake",
+							"description": "Rice cake, gochujang, kabocha squash, onions, peppers, almonds, sesame seed, scallion, carrots.",
+							"price": "$23.00",
+							"image": null
+						},
+						{
+							"name": "Calamari & Peanuts",
+							"description": "fried calamari, peanuts, paprika, tartar sauce",
+							"price": "$20.00",
+							"image": null
+						},
+						{
+							"name": "Tteok & Cheese",
+							"description": "Rice cake, sweet corn, quinoa, fontina, cheddar, parmesan cheese, truffle essence, crostini",
+							"price": "$21.00",
+							"image": null
+						},
+						{
+							"name": "Wings",
+							"description": "Choice of: Soy Garlic | Hot & Spicy | Citrus Flavor.",
+							"price": "$17.00",
+							"image": null
+						},
+						{
+							"name": "Popcorn Chicken",
+							"description": "chicken thigh, black sesame seed, roasted peanuts, béchamel sauce",
+							"price": "$16.00",
+							"image": null
+						},
+						{
+							"name": "Salmon Tartare",
+							"description": "(Cold) Lemon, Cucumber, Pickle Radish, Mayo, Guacamole, Fish Roe With Crostini.",
+							"price": "$23.00",
+							"image": null
+						},
+						{
+							"name": "Buns",
+							"description": "{2 Pieces} Scallion coleslaw, pickled radish, cucumber, tartar sauce.",
+							"price": "$17.00",
+							"image": null
+						},
+						{
+							"name": "Korean Pancake",
+							"description": "Served with mix green salad and yuzu dressing.",
+							"price": "$23.00",
+							"image": null
+						},
+						{
+							"name": "Mushrooms",
+							"description": "garlic butter, mushrooms: oyster, cremini, shiitake",
+							"price": "$18.00",
+							"image": null
+						},
+						{
+							"name": "Crunchy Tofu",
+							"description": "fried tofu with a spicy glaze and caramelized kimchi",
+							"price": "$16.00",
+							"image": null
+						},
+						{
+							"name": "Truffle Fries",
+							"description": "Hand cut potato, granulated garlic, and truffle essence.",
+							"price": "$10.00",
+							"image": null
+						},
+						{
+							"name": "Shrimp Tempura",
+							"description": "Panko, Lemon Aioli, Tartar Sauce, Pico De Gallo",
+							"price": "$20.00",
+							"image": null
+						},
+						{
+							"name": "Fried Asparagus",
+							"description": "Sesame seeds and asparagus with spacy mayo.",
+							"price": "$15.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Combos Set",
+					"items": [
+						{
+							"name": "Rice Combo",
+							"description": "",
+							"price": "$29.00",
+							"image": null
+						},
+						{
+							"name": "Noodle Combo",
+							"description": "",
+							"price": "$29.00",
+							"image": null
+						},
+						{
+							"name": "Soup Combo",
+							"description": "",
+							"price": "$29.00",
+							"image": null
+						}
+					]
+				},
+				{
+					"category": "Lunch Special",
+					"items": [
+						{
+							"name": "Combo Taco",
+							"description": "",
+							"price": "$29.00",
+							"image": null
+						},
+						{
+							"name": "Combo Burrito",
+							"description": "",
+							"price": "$29.00",
+							"image": null
+						},
+						{
+							"name": "Combo Burger",
+							"description": "",
+							"price": "$29.00",
+							"image": null
+						}
+					]
+				}
+			]
+		}
+	],
+	"menuUrl": null,
+	"reserveTableUrls": [
+		"https://resy.com/cities/new-york-ny/venues/barn-joo-union-square?rwg_token=AFd1xnGL3cb702rGKaoxECrtyehUMQoPZxO2YufWerB2Wnv64dgHAi6nhfDVO4tSoZbaQ74ireKIjdL4CA7mOEx_wi79Av_lyg%3D%3D",
+		"https://www.google.com/maps/reserve/v/dine/c/8A5nq1uW7xE"
+	],
+	"orderOnlineUrls": [
+		"https://order.online/store/-17913/?delivery=true&hideModal=true&utm_source=gfo&rwg_token=AFd1xnEGL05RFjkzlgpNcOX5cpxEiZvnbIwEQnKMpW7XHRu5gXdwr9Adrz-lKhdlvUp8vhOlI9TSZzBgRVuGK0pAob655ryd5g%3D%3D",
+		"https://www.grubhub.com/restaurant/barn-joo-union-square-35-union-square-west-new-york/294375?utm_source=google&utm_medium=organic&utm_campaign=place-action-link&pickup=true&rwg_token=AFd1xnELvIIx_i35TQ24DwG73lUB9PzOEfQ9_EXp3B1GCZoeHsXhpaaPRtSjRLCznazXKG3cLwRFLPVqEootgU6e8PMPr_eb-g%3D%3D",
+		"https://www.ubereats.com/store/barn-joo-union-square/F18q3UKrS2K31co21f0U1Q?utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free-nonbrand&utm_source=google-pas",
+		"https://www.trycaviar.com/store/barn-joo-new-york-17913/?utm_campaign=gpa",
+		"https://www.seamless.com/menu/barn-joo-union-square-35-union-square-west-new-york/294375?utm_source=google&utm_medium=organic&utm_campaign=place-action-link&pickup=true&rwg_token=AFd1xnEfLZomOZ6x6b690_2oUvd4Jr_VVWPVVmrYbUHrBTNaXVp-Pu-Zc7powVwG63uMaAZpOr5JxPPrnZn8pU6CdUrFNShhIA%3D%3D",
+		"https://www.doordash.com/store/barn-joo-new-york-17913/?utm_campaign=gpa",
+		"https://www.postmates.com/store/barn-joo-union-square/F18q3UKrS2K31co21f0U1Q?utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free-nonbrand&utm_source=google-pas"
+	],
+	"scrapedAt": "2026-01-22T06:31:06.968Z"
+}

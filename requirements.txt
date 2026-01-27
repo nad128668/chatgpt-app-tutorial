@@ -1,0 +1,11 @@
+# ASGI server
+uvicorn[standard]>=0.30.0
+
+# MCP server framework + types
+mcp>=1.0.0
+
+# Data validation
+pydantic>=2.7.0
+
+# Used for CORSMiddleware (imported from starlette)
+starlette>=0.37.0
