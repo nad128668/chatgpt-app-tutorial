@@ -712,3 +712,9 @@ Now, when you prompt:
 * Call your MCP tool (find_places)
 * Load your React UI
 * Render the map inline with the output from MCP Tool
+
+Buy me a coffee ☕
+👉 https://paypal.me/nad128668
+👉 0x80b3c3aac362Fcb2CFD7a381637f6A5dFE903146 (Any EVM-Based Asset)
+
+
