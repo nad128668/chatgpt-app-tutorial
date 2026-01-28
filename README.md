@@ -710,8 +710,12 @@ Now, when you prompt:
 * Load your React UI
 * Render the map inline with the output from MCP Tool
 
-Buy me a coffee ☕
-👉 https://paypal.me/nad128668
-👉 0x80b3c3aac362Fcb2CFD7a381637f6A5dFE903146 (Any EVM-Based Asset)
+### Buy me a coffee ☕
+> 👉 https://paypal.me/nad128668
+> 👉 0x80b3c3aac362Fcb2CFD7a381637f6A5dFE903146 (Any EVM-Based Asset)
 
+### Contributing
+You are welcome to open issues or submit PRs to improve this app.
 
+### License
+This project is licensed under the MIT License. See LICENSE for details.
