@@ -629,6 +629,384 @@ This server will:
 
 ---
 
+In this folder, create following files:
+
+### `main.py`
+
+This is the starting point where we start our mcp server, running locally on port **2091**
+
+```py
+from __future__ import annotations
+
+from .mcp_app import app
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run("mcp_server.main:app", host="0.0.0.0", port=2091)
+```
+
+### `widgets.py`
+
+```py
+from __future__ import annotations
+
+from dataclasses import dataclass
+from functools import lru_cache
+from pathlib import Path
+from typing import Dict, List
+
+
+MIME_TYPE = "text/html+skybridge"
+
+
+@dataclass(frozen=True)
+class Widget:
+    identifier: str
+    title: str
+    template_uri: str
+    invoking: str
+    invoked: str
+    html: str
+    response_text: str
+
+
+ASSETS_DIR = Path(__file__).resolve().parent / "../ui-js/dist"
+
+
+@lru_cache(maxsize=None)
+def load_widget_html(file_stem: str) -> str:
+    html_path = ASSETS_DIR / f"{file_stem}/index.html"
+    if html_path.exists():
+        return html_path.read_text(encoding="utf8")
+    raise FileNotFoundError(f'Widget HTML "{html_path}" not found.')
+
+
+def build_widgets() -> List[Widget]:
+    return [
+        Widget(
+            identifier="places-map",
+            title="Show Places Map",
+            template_uri="ui://widget/places-map.html",
+            invoking="Preparing a map",
+            invoked="Map ready",
+            html=load_widget_html("places-map"),
+            response_text="Rendered a places map!",
+        )
+    ]
+
+
+def widgets_by_id(widgets: List[Widget]) -> Dict[str, Widget]:
+    return {w.identifier: w for w in widgets}
+
+
+def widgets_by_uri(widgets: List[Widget]) -> Dict[str, Widget]:
+    return {w.template_uri: w for w in widgets}
+
+
+def resource_description(widget: Widget) -> str:
+    return f"{widget.title} widget markup"
+
+
+def tool_meta(widget: Widget) -> dict:
+    return {
+        "openai/outputTemplate": widget.template_uri,
+        "openai/toolInvocation/invoking": widget.invoking,
+        "openai/toolInvocation/invoked": widget.invoked,
+        "openai/widgetAccessible": True,
+    }
+
+
+def tool_invocation_meta(widget: Widget) -> dict:
+    return {
+        "openai/toolInvocation/invoking": widget.invoking,
+        "openai/toolInvocation/invoked": widget.invoked,
+    }
+
+```
+*Note:*
+- `ASSETS_DIR = Path(__file__).resolve().parent / "../ui-js/dist"` is where we build the UI later on
+- `def build_widgets() -> List[Widget]:` You define all your UI widgets here to display on ChatGPT chat message box in the response to user prompt.
+- The actual HTML file which will be sent to the response is in `def load_widget_html(file_stem: str) -> str:`, in our example, the exact location will be `ui-js/dist/places-map/index.html`
+
+
+### `security.py`
+
+```py
+from __future__ import annotations
+
+import os
+from typing import List
+from mcp.server.transport_security import TransportSecuritySettings
+
+
+def _split_env_list(value: str | None) -> List[str]:
+    if not value:
+        return []
+    return [item.strip() for item in value.split(",") if item.strip()]
+
+
+def transport_security_settings() -> TransportSecuritySettings:
+    allowed_hosts = _split_env_list(os.getenv("MCP_ALLOWED_HOSTS"))
+    allowed_origins = _split_env_list(os.getenv("MCP_ALLOWED_ORIGINS"))
+    if not allowed_hosts and not allowed_origins:
+        return TransportSecuritySettings(enable_dns_rebinding_protection=False)
+    return TransportSecuritySettings(
+        enable_dns_rebinding_protection=True,
+        allowed_hosts=allowed_hosts,
+        allowed_origins=allowed_origins,
+    )
+```
+*Note:* We can define the `MCP_ALLOWED_HOSTS` and `MCP_ALLOWED_ORIGINS` in `.env` during production but not required in this tutorial
+
+### `schemas.py`
+
+```py
+from __future__ import annotations
+
+from typing import Optional, Any, Dict
+from pydantic import BaseModel, ConfigDict, Field
+
+
+class FindPlaceUsingKwInput(BaseModel):
+    keyword: str
+    cityName: str
+    countryCode: str
+
+    model_config = ConfigDict(populate_by_name=True, extra="forbid")
+
+
+FIND_BY_KW_SCHEMA: Dict[str, Any] = {
+    "type": "object",
+    "properties": {
+        "keyword": {"type": "string"},
+        "cityName": {"type": "string"},
+        "countryCode": {"type": "string"},
+    },
+    "required": ["keyword", "cityName", "countryCode"],
+    "additionalProperties": False,
+}
+```
+*Note:* We are using `pydantic` to validate input data
+
+### `utils.py`
+
+```py
+from __future__ import annotations
+
+import json
+from typing import Any, Dict, List
+import os
+
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PLACES_DIR = os.path.join(BASE_DIR, "data", "places")
+
+def _load_all_places() -> List[Dict[str, Any]]:
+    """Load all JSON files from ./data/places"""
+    places: List[Dict[str, Any]] = []
+
+    if not os.path.isdir(PLACES_DIR):
+        raise FileNotFoundError(f"Directory not found: {PLACES_DIR}")
+
+    for filename in os.listdir(PLACES_DIR):
+        if not filename.endswith(".json"):
+            continue
+
+        path = os.path.join(PLACES_DIR, filename)
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                places.append(json.load(f))
+        except Exception as e:
+            print(f"⚠️ Failed to load {filename}: {e}")
+
+    return places
+```
+
+### `mcp_app.py`
+
+This .py file is how we prepare the data to response ChatGPT request. We have only 1 tool and listed in `@mcp._mcp_server.list_tools()`
+
+The actual code for the tool is in `async def _call_tool_request(req: types.CallToolRequest) -> types.ServerResult:` where we will load all json files from `./data/places/` as a List.
+
+```py
+from __future__ import annotations
+
+import random
+from copy import deepcopy
+from typing import List
+
+import mcp.types as types
+from mcp.server.fastmcp import FastMCP
+from pydantic import ValidationError
+
+from .utils import _load_all_places
+from .schemas import (
+    FindPlaceUsingKwInput,
+    FIND_BY_KW_SCHEMA,
+)
+from .security import transport_security_settings
+from .widgets import (
+    MIME_TYPE,
+    build_widgets,
+    widgets_by_id,
+    widgets_by_uri,
+    resource_description,
+    tool_meta,
+    tool_invocation_meta,
+)
+
+# Build widgets once
+WIDGETS = build_widgets()
+WIDGETS_BY_ID = widgets_by_id(WIDGETS)
+WIDGETS_BY_URI = widgets_by_uri(WIDGETS)
+
+# One widget shared by both tools
+MAP_WIDGET = WIDGETS_BY_ID["places-map"]
+
+
+mcp = FastMCP(
+    name="places-python",
+    stateless_http=True,
+    transport_security=transport_security_settings(),
+)
+
+
+@mcp._mcp_server.list_tools()
+async def _list_tools() -> List[types.Tool]:
+    return [
+        types.Tool(
+            name="find_places",
+            title="Find places using keyword",
+            description="Return places and render a map.",
+            inputSchema=deepcopy(FIND_BY_KW_SCHEMA),
+            _meta=tool_meta(MAP_WIDGET),
+            annotations={
+                "destructiveHint": False,
+                "openWorldHint": False,
+                "readOnlyHint": True,
+            },
+        ),
+    ]
+
+
+@mcp._mcp_server.list_resources()
+async def _list_resources() -> List[types.Resource]:
+    return [
+        types.Resource(
+            name=w.title,
+            title=w.title,
+            uri=w.template_uri,
+            description=resource_description(w),
+            mimeType=MIME_TYPE,
+            _meta=tool_meta(w),
+        )
+        for w in WIDGETS
+    ]
+
+
+@mcp._mcp_server.list_resource_templates()
+async def _list_resource_templates() -> List[types.ResourceTemplate]:
+    return [
+        types.ResourceTemplate(
+            name=w.title,
+            title=w.title,
+            uriTemplate=w.template_uri,
+            description=resource_description(w),
+            mimeType=MIME_TYPE,
+            _meta=tool_meta(w),
+        )
+        for w in WIDGETS
+    ]
+
+
+async def _handle_read_resource(req: types.ReadResourceRequest) -> types.ServerResult:
+    widget = WIDGETS_BY_URI.get(str(req.params.uri))
+    if widget is None:
+        return types.ServerResult(
+            types.ReadResourceResult(
+                contents=[],
+                _meta={"error": f"Unknown resource: {req.params.uri}"},
+            )
+        )
+
+    contents = [
+        types.TextResourceContents(
+            uri=widget.template_uri,
+            mimeType=MIME_TYPE,
+            text=widget.html,
+            _meta=tool_meta(widget),
+        )
+    ]
+    return types.ServerResult(types.ReadResourceResult(contents=contents))
+
+
+async def _call_tool_request(req: types.CallToolRequest) -> types.ServerResult:
+    tool_name = req.params.name
+    args = req.params.arguments or {}
+    meta = tool_invocation_meta(MAP_WIDGET)
+
+    if tool_name == "find_places":
+        try:
+            payload = FindPlaceUsingKwInput.model_validate(args)
+        except ValidationError as exc:
+            return types.ServerResult(
+                types.CallToolResult(
+                    content=[types.TextContent(type="text", text=f"Input validation error: {exc.errors()}")],
+                    isError=True,
+                )
+            )
+
+        places = _load_all_places()
+        return types.ServerResult(
+            types.CallToolResult(
+                content=[types.TextContent(type="text", text=MAP_WIDGET.response_text)],
+                structuredContent={
+                    "ok": True,
+                    "keyword": payload.keyword,
+                    "cityName": payload.cityName,
+                    "countryCode": payload.countryCode,
+                    "count": len(places),
+                    "places": places,
+                },
+                _meta=meta,
+            )
+        )
+
+    return types.ServerResult(
+        types.CallToolResult(
+            content=[types.TextContent(type="text", text=f"Unknown tool: {tool_name}")],
+            isError=True,
+        )
+    )
+
+
+# Wire handlers
+mcp._mcp_server.request_handlers[types.CallToolRequest] = _call_tool_request
+mcp._mcp_server.request_handlers[types.ReadResourceRequest] = _handle_read_resource
+
+
+# Export ASGI app
+app = mcp.streamable_http_app()
+
+# Optional: CORS
+try:
+    from starlette.middleware.cors import CORSMiddleware
+
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["*"],
+        allow_methods=["*"],
+        allow_headers=["*"],
+        allow_credentials=False,
+    )
+except Exception:
+    pass
+
+```
+
+---
+
 ### Run the MCP Server
 
 Create and activate a virtual environment:
